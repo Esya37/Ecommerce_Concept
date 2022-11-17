@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PhoneNameText" parent="Text">
+        <item name="android:fontFamily">@font/mark_pro_medium</item>
+        <item name="android:textSize">@dimen/font_large_huge</item>
+    </style>
+
+    <style name="TabLayoutTextUnselected" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="TabLayoutTextSelected" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="PhoneComponentsText">
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">@color/silver</item>
+    </style>
+
+    <style name="ProductDetailsSubtitleText" parent="Text">
+        <item name="android:fontFamily">@font/mark_pro_medium</item>
+        <item name="android:textSize">@dimen/font_normal_large</item>
+    </style>
+</resources>

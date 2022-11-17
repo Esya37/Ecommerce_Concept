@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_counter">
+
+    <TextView
+        android:id="@+id/tv_product_counter_minus"
+        style="@style/ProductInCartText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/btn_text_minus"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_product_counter_product_count"
+        app:layout_constraintStart_toStartOf="@+id/tv_product_counter_product_count"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_product_counter_plus"
+        style="@style/ProductInCartText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/btn_text_plus"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_product_counter_product_count"
+        app:layout_constraintStart_toStartOf="@+id/tv_product_counter_product_count"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_counter_product_count" />
+
+    <TextView
+        android:id="@+id/tv_product_counter_product_count"
+        style="@style/ProductInCartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_counter_minus"
+        tools:text="2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

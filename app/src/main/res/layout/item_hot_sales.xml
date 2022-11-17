@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_hot_sales"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:contentPaddingStart="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedImageView"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[0]" />
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shadow_effect"
+        app:layout_constraintBottom_toBottomOf="@id/iv_hot_sales"
+        app:layout_constraintEnd_toEndOf="@id/iv_hot_sales"
+        app:layout_constraintStart_toStartOf="@id/iv_hot_sales"
+        app:layout_constraintTop_toTopOf="@id/iv_hot_sales" />
+
+    <TextView
+        android:id="@+id/tv_title_hot_sales"
+        style="@style/TitleTextHotSales"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_hot_sales"
+        app:layout_constraintEnd_toEndOf="@+id/iv_hot_sales"
+        app:layout_constraintStart_toStartOf="@id/iv_hot_sales"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="iPhone 12" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_hot_sales"
+        style="@style/SubtitleTextHotSales"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_hot_sales"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_hot_sales"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_hot_sales"
+        tools:text="Super. Mega. Rapido." />
+
+    <Button
+        android:id="@+id/btn_buy_hot_sales"
+        style="@style/BuyButtonHotSales"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:includeFontPadding="false"
+        android:text="@string/hot_sales_item_buy_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_hot_sales"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_hot_sales" />
+
+    <include
+        android:id="@+id/include_new_mark"
+        layout="@layout/new_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_hot_sales"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_hot_sales"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

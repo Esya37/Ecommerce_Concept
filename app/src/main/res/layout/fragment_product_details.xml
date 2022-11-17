@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_darker"
+    tools:context=".ui.fragments.ProductDetailsFragment">
+
+    <ImageButton
+        android:id="@+id/img_btn_product_details_cart"
+        style="@style/ButtonSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:src="@drawable/ic_cart"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_product_details_title"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/tv_product_details_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_product_details_title"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/img_btn_product_details_back"
+        style="@style/ButtonSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/text_color"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_product_details_title"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_product_details_title"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_product_details_title"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_product_details_title"
+        style="@style/FilterItemsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/product_details_screen_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/rv_product_details_phone_images"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_product_details_back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        style="@style/RoundedBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_product_details_cpu"
+            style="@style/PhoneComponentsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_product_details_subtitle_select_configuration"
+            app:layout_constraintEnd_toEndOf="@+id/iv_product_details_cpu"
+            app:layout_constraintStart_toStartOf="@+id/iv_product_details_cpu"
+            tools:text="Exynos 990" />
+
+        <TextView
+            android:id="@+id/tv_product_details_ram"
+            style="@style/PhoneComponentsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_product_details_cpu"
+            app:layout_constraintEnd_toEndOf="@+id/iv_product_details_ram"
+            app:layout_constraintStart_toStartOf="@+id/iv_product_details_ram"
+            app:layout_constraintTop_toTopOf="@+id/tv_product_details_cpu"
+            tools:text="8 GB" />
+
+        <TextView
+            android:id="@+id/tv_product_details_sd"
+            style="@style/PhoneComponentsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_product_details_ram"
+            app:layout_constraintEnd_toEndOf="@+id/iv_product_details_sd"
+            app:layout_constraintStart_toStartOf="@+id/iv_product_details_sd"
+            app:layout_constraintTop_toTopOf="@+id/tv_product_details_ram"
+            tools:text="256 GB" />
+
+        <ImageButton
+            android:id="@+id/img_btn_product_details_favorite"
+            style="@style/ButtonSmall"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="37dp"
+            android:backgroundTint="@color/text_color"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_product_details_name"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_product_details_name"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_product_details_name"
+            style="@style/PhoneNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/rating_bar_product_details_rating"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Galaxy Note 20 Ultra" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_product_details_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:numStars="5"
+            android:progressTint="@color/selective_yellow"
+            app:layout_constraintBottom_toTopOf="@+id/tab_layout_product_details"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_details_name" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_product_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/iv_product_details_cpu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabIndicatorColor="@color/background_color"
+            app:tabSelectedTextColor="@color/text_color"
+            app:tabTextAppearance="@style/TabLayoutTextUnselected"
+            app:tabTextColor="@color/gray">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_details_screen_tab_shop" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_details_screen_tab_details" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_details_screen_tab_features" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <ImageView
+            android:id="@+id/iv_product_details_cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_cpu"
+            app:layout_constraintBottom_toTopOf="@+id/tv_product_details_cpu"
+            app:layout_constraintEnd_toStartOf="@+id/iv_product_details_camera"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_product_details_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ram_min"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_product_details_cpu"
+            app:layout_constraintEnd_toStartOf="@+id/iv_product_details_sd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_product_details_camera"
+            app:layout_constraintTop_toTopOf="@+id/iv_product_details_cpu" />
+
+        <ImageView
+            android:id="@+id/iv_product_details_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_product_details_cpu"
+            app:layout_constraintEnd_toStartOf="@+id/iv_product_details_ram"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_product_details_cpu"
+            app:layout_constraintTop_toTopOf="@+id/iv_product_details_cpu" />
+
+        <ImageView
+            android:id="@+id/iv_product_details_sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sd"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_product_details_cpu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_product_details_ram"
+            app:layout_constraintTop_toTopOf="@+id/iv_product_details_cpu" />
+
+        <TextView
+            android:id="@+id/tv_product_details_camera"
+            style="@style/PhoneComponentsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_product_details_cpu"
+            app:layout_constraintEnd_toEndOf="@+id/iv_product_details_camera"
+            app:layout_constraintStart_toStartOf="@+id/iv_product_details_camera"
+            app:layout_constraintTop_toTopOf="@+id/tv_product_details_cpu"
+            tools:text="108 + 12 mp" />
+
+        <TextView
+            android:id="@+id/tv_product_details_subtitle_select_configuration"
+            style="@style/ProductDetailsSubtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/product_details_screen_subtitle_select_configuration"
+            app:layout_constraintBottom_toTopOf="@+id/rv_product_details_phone_colors"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_product_details_phone_colors"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/include_product_details_accept_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rv_product_details_phone_sds"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:itemCount="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_product_details_phone_sds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rv_product_details_phone_colors"
+            app:layout_constraintTop_toTopOf="@+id/rv_product_details_phone_colors"
+            tools:itemCount="1" />
+
+        <include
+            android:id="@+id/include_product_details_accept_button"
+            style="@style/ButtonSmall"
+            layout="@layout/btn_add_to_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

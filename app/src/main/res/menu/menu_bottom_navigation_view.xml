@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_explorer"
+        android:title="@string/menu_text_explorer"
+        android:checkable="true"
+        android:id="@+id/mainScreenFragment" />
+    <item android:icon="@drawable/ic_cart"
+        android:title=""
+        android:checkable="true"
+        android:id="@+id/fragment_cart"/>
+    <item android:icon="@drawable/ic_favorite"
+        android:checkable="true"
+        android:title="" />
+    <item android:icon="@drawable/ic_account"
+        android:checkable="true"
+        android:title="" />
+</menu>

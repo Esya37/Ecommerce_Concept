@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Ecommerce Concept</string>
+    <string name="title_main_screen_select_category">Select Category</string>
+    <string name="title_main_screen_hot_sales">Hot sales</string>
+    <string name="title_main_screen_best_seller">Best Seller</string>
+    <string name="filter_screen_title">Filter options</string>
+    <string name="product_details_screen_title">Product Details</string>
+    <string name="filter_option_brand">Brand</string>
+    <string name="filter_option_price">Price</string>
+    <string name="filter_option_size">Size</string>
+    <string name="btn_text_main_screen_view_all">view all</string>
+    <string name="btn_text_main_screen_see_more">see more</string>
+    <string name="btn_text_done">Done</string>
+    <string name="btn_text_checkout">Checkout</string>
+    <string name="btn_text_add_to_cart">Add address</string>
+    <string name="btn_text_plus">+</string>
+    <string name="btn_text_minus">-</string>
+    <string name="cart_near_button_text_add_to_cart">Add to Cart</string>
+    <string name="hint_search">Search</string>
+    <string name="new_mark_text">New</string>
+    <string name="hot_sales_item_buy_button_text">Buy now!</string>
+    <string name="cost_in_dollars">$%1$s</string>
+    <string name="capacity_in_gb">%1$s GB</string>
+    <string name="product_details_screen_tab_shop">Shop</string>
+    <string name="product_details_screen_tab_details">Details</string>
+    <string name="product_details_screen_tab_features">Features</string>
+    <string name="product_details_screen_subtitle_select_configuration">Select color and capacity</string>
+    <string name="cart_title">My Cart</string>
+    <string name="cart_cost_position_total">Total</string>
+    <string name="cart_cost_position_delivery">Delivery</string>
+    <string name="menu_text_explorer">Explorer</string>
+
+
+    <string-array name="addresses">
+        <item>Zihuatanejo, Gro</item>
+        <item>Some other address</item>
+    </string-array>
+    <string-array name="brands">
+        <item>Samsung</item>
+        <item>Apple</item>
+    </string-array>
+    <string-array name="prices">
+        <item>$0 - $300</item>
+        <item>$300 - $500</item>
+        <item>$500 - $800</item>
+        <item>$800 - $1500</item>
+        <item>$1500 - $2500</item>
+        <item>$2500 - $5000</item>
+        <item>$5000 - $10000</item>
+    </string-array>
+    <string-array name="sizes">
+        <item>4.5 to 5.5 inches</item>
+        <item>5.5 to 6.3 inches</item>
+        <item>6.3 to 6.8 inches</item>
+    </string-array>
+</resources>

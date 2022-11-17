@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleTextMainScreen" parent="Text">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textSize">@dimen/font_huge</item>
+    </style>
+
+    <style name="TitleTextHotSales">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textSize">@dimen/font_huge</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleTextFilter">
+        <item name="android:fontFamily">@font/mark_pro_medium</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="SubtitleTextHotSales">
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NewMarkText">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SelectCategoryItemText">
+        <item name="android:fontFamily">@font/mark_pro_medium</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="FilterItemsText" parent="Text">
+        <item name="android:fontFamily">@font/mark_pro_medium</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="PriceWithOutDiscountTextMainScreen">
+        <item name="android:fontFamily">@font/mark_pro_medium</item>
+        <item name="android:textSize">@dimen/font_tiny</item>
+        <item name="android:textColor">@color/very_light_grey</item>
+        <item name="android:background">@drawable/strikethrough_shape</item>
+    </style>
+
+    <style name="DiscountPriceTextMainScreen" parent="Text">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textSize">@dimen/font_normal_large</item>
+    </style>
+
+    <style name="BestSellerNameMainScreen" parent="Text">
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textSize">@dimen/font_tiny</item>
+    </style>
+
+    <style name="BuyButtonHotSales" parent="Button">
+        <item name="android:fontFamily">@font/mark_pro_bold</item>
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@drawable/background_btn_buy_hot_sales</item>
+    </style>
+
+    <style name="TextButtonMainScreen" parent="Button">
+        <item name="android:fontFamily">@font/mark_pro</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/tomato</item>
+    </style>
+
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_filter_dialog</item>
+    </style>
+    <style name="FilterDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+</resources>
